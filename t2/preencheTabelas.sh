@@ -1,0 +1,5 @@
+ruby script.rb --operacao=inclusao --tabela=pessoas --atributos=last_name="Svendson",first_name="Tove"
+ruby script.rb --operacao=inclusao --tabela=pessoas --atributos=last_name="Machado",first_name="Cleber"
+ruby script.rb --operacao=inclusao --tabela=endereco --atributos=pessoa_id="1",address="Rua Machado de Assis",city="Curitiba"
+ruby script.rb --operacao=inclusao --tabela=telefone --atributos=pessoa_id="1",number="999978456"
+ruby script.rb --operacao=inclusao --tabela=telefone --atributos=pessoa_id="1",number="999784221"
