@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pagina de Mihael Scofield de Azevedo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f873608414.js" crossorigin="anonymous"></script>
+    <script src="C:\Users\mihae\Downloads\UFPR\Prog-Web\t3\controller\web\t3.js"></script>
+</head>
+
+<body>
+    <header>
+        <img class="profilePhoto" src="https://www.inf.ufpr.br/msa18/materials/mihaelProfile.jpg" alt="Foto de Perfil">
+        
+        <h1>Mihael Scofield</h1>
+
+        <nav>
+            <ul class="paginas">
+                <li><a href="https://www.inf.ufpr.br/msa18/index.html">Início</a></li>
+                <li><a href="https://www.inf.ufpr.br/msa18/view/compiladores/compiladores.html">Compiladores</a></li>
+                <li><a href="https://www.inf.ufpr.br/msa18/view/web/web.html">Programação Web</a></li>
+                <li><a href="https://www.inf.ufpr.br/msa18/view/redes/redes.html">Redes 1</a></li>
+            </ul>
+        </nav>
+
+        <footer>
+            <ul class="links">
+                <li><a href="https://github.com/Mihael-Scofield" target="blank" title="GitHub"><i class="fa-brands fa-github fa-2xl"></i></a></li>
+        </footer>
+    </header>
+
+    <main>
+        <div style="text-align:center;">
+            <button onclick="poligono()">Gerar polígono</button>
+            <button onclick="reiniciarQuadro()">Limpar</button>
+        </div>
+        <canvas id="idCanvas" width="1000" height="750" onmousedown="clicando(event)" onmouseup="soltando()" onmousemove="movendo(event)"></canvas>
+    </main>
+</body>
+</html>
