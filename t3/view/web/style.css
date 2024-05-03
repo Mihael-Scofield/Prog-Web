@@ -142,7 +142,7 @@ MAIN -> CANVAS (T3)
 */
 
 #idCanvas {
-    border: 5px solid black;
+    border: 5px solid rgb(223, 168, 120);
     padding-left: 0;
     padding-right: 0;
     margin-top: 5%;

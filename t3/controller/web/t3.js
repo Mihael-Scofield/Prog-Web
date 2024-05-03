@@ -103,12 +103,12 @@ function movendo(event) {
         } else if (interacao === 2) { // Linha inteira
             const meio_x = (vertices[verticeAtual].ini_x + vertices[verticeAtual].fim_x) / 2;
             const meio_y = (vertices[verticeAtual].ini_y + vertices[verticeAtual].fim_y) / 2;
-            const deltaX = mouseX - meio_x;
-            const deltaY = mouseY - meio_y;
-            vertices[verticeAtual].ini_x += deltaX;
-            vertices[verticeAtual].ini_y += deltaY;
-            vertices[verticeAtual].fim_x += deltaX;
-            vertices[verticeAtual].fim_y += deltaY;
+            const difX = mouseX - meio_x;
+            const difY = mouseY - meio_y;
+            vertices[verticeAtual].ini_x += difX;
+            vertices[verticeAtual].ini_y += difY;
+            vertices[verticeAtual].fim_x += difX;
+            vertices[verticeAtual].fim_y += difY;
         }
         
         // Plotagem
