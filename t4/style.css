@@ -1,0 +1,126 @@
+/*
+=============================== 
+HEADER
+===============================
+*/
+
+html {
+    background-color: rgb(223, 168, 120);
+    height: 100%;
+    font-family: sans-serif;
+    color: white;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    display: inline-grid;
+    grid-template-columns: 20% auto;
+}
+
+/*
+=============================== 
+Header: Sidebar
+===============================
+*/
+
+header {
+    background: rgb(108, 52, 40);
+    background: linear-gradient(180deg, rgb(206, 230, 243) 0%, rgb(223, 168, 120) 30%, rgb(186, 112, 79) 60%, rgb(108, 52, 40) 100%);
+    text-align: center;
+    border-radius: 10px;
+    overflow-wrap: break-word;
+}
+
+header h1 {
+    padding-top: 20px;
+    color: black;   
+}
+
+.profilePhoto {
+    height: 180px;
+    width: 180px;
+    max-width: 90%;
+    border-radius: 100%;
+    margin-top: 20px;
+}
+
+ul {
+    text-align: center;
+    list-style: none;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*
+=============================== 
+Header: Navegacao
+===============================
+*/
+
+.paginas {
+    padding-top: 10%;
+    font-size: 24px;
+}
+
+.paginas li{
+    padding: 7%;
+}
+
+.paginas li a:hover{
+    color: black;
+}
+
+/*
+=============================== 
+Header: Links externos
+===============================
+*/
+
+.links li {
+    padding: 10px;
+}
+
+.links li:hover {
+    background-color: white;
+    border-radius: 15%;
+}
+
+footer {
+    margin-top: 50%;
+}
+
+footer .links li {
+    display: inline-block;
+}
+
+/*
+=============================== 
+MAIN
+===============================
+*/
+
+main {
+    padding: 4%;
+    text-align: center;
+}
+
+main p {
+    color: black;
+    font-style: oblique;
+    font-size: larger;
+    margin-top: 30px;
+}
+
+main article {
+    margin-top: 50px;
+}
+
+.appaGif {
+    border-radius: 15%;
+}
