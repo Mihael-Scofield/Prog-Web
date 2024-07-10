@@ -1,0 +1,167 @@
+/*
+=============================== 
+HEADER
+===============================
+*/
+
+html {
+    background-color: rgb(223, 168, 120);
+    height: 100%;
+    font-family: sans-serif;
+    color: white;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    display: inline-grid;
+    grid-template-columns: 20% auto;
+    color: black;
+}
+
+/*
+=============================== 
+Header: Sidebar
+===============================
+*/
+
+header {
+    background: rgb(108, 52, 40);
+    background: linear-gradient(180deg, rgb(206, 230, 243) 0%, rgb(223, 168, 120) 30%, rgb(186, 112, 79) 60%, rgb(108, 52, 40) 100%);
+    text-align: center;
+    border-radius: 10px;
+    overflow-wrap: break-word;
+}
+
+header h1 {
+    padding-top: 20px;
+    color: black;   
+}
+
+.profilePhoto {
+    height: 180px;
+    width: 180px;
+    max-width: 90%;
+    border-radius: 100%;
+    margin-top: 20px;
+}
+
+ul {
+    text-align: center;
+    list-style: none;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*
+=============================== 
+Header: Navegacao
+===============================
+*/
+
+.paginas {
+    padding-top: 10%;
+    font-size: 24px;
+}
+
+.paginas li{
+    padding: 7%;
+}
+
+.paginas li a:hover{
+    color: black;
+}
+
+/*
+=============================== 
+Header: Links externos
+===============================
+*/
+
+.links li {
+    padding: 10px;
+}
+
+.links li:hover {
+    background-color: white;
+    border-radius: 15%;
+}
+
+footer {
+    margin-top: 50%;
+}
+
+footer .links li {
+    display: inline-block;
+}
+
+/*
+=============================== 
+MAIN
+===============================
+*/
+
+main {
+    padding: 4%;
+    text-align: center;
+}
+
+main a {
+    font-size: 18px;
+    color: rgb(108, 52, 40);
+}
+
+main h2 {
+    margin-top: 5%;
+}
+
+main p {
+    color: black;
+    font-size: larger;
+    margin-top: 1%;
+}
+
+main article {
+    margin-top: 50px;
+}
+
+.coffeGiff {
+    height: 25%;
+    border-radius: 15%;
+}
+
+/*
+=============================== 
+MAIN -> CANVAS (T3)
+===============================
+*/
+
+#idCanvas {
+    border: 5px solid rgb(223, 168, 120);
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+main button {
+    padding: 10px;
+    background-color: rgb(206, 230, 243);
+    border-radius: 15px;
+    border: outset;
+    width: 500px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+main button:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
