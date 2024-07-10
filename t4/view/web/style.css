@@ -165,3 +165,108 @@ main button:hover {
     opacity: 0.5;
     cursor: pointer;
 }
+
+/*
+=============================== 
+MAIN -> VISUALIZATOR (T4)
+===============================
+*/
+
+form {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: whitesmoke;
+    width: 300px;
+    height: 44px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);    
+}
+
+input {
+  all: unset;
+  font: 16px system-ui;
+  height: 100%;
+  width: 100%;
+  padding: 6px 10px;
+}
+
+::placeholder {
+  opacity: 0.7; 
+}
+
+#btnPesquisa {
+    all: unset;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+}
+  
+svg {
+    fill: currentColor;
+    width: 24px;
+    height: 24px;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+.aprovado {
+    background-color: green;
+}
+
+.reprovado {
+    background-color: red;
+}
+
+.matriculado {
+    background-color: blue;
+}
+
+.equivalencia {
+    background-color: yellow;
+}
+
+#tblGrade {
+    margin-top: 5%;
+    border-collapse: separate;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+#popup {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    background-color: grey;
+    padding: 2%;
+    border-radius: 15px;
+    color: black;
+}
+
+#fechar-popup {
+    position: absolute;
+    left: 95%;
+    top: 5px;
+    font-size: 1.5pc;
+}
+
+#fechar-popup:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
