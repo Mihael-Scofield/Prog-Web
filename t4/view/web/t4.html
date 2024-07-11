@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Pagina de Mihael Scofield de Azevedo</title>
-    <link rel="stylesheet" href="C:\Users\mihae\Downloads\UFPR\Prog-Web\t4\view\web\style.css">
+    <link rel="stylesheet" href="https://www.inf.ufpr.br/msa18/view/web/style.css">
     <script src="https://kit.fontawesome.com/f873608414.js" crossorigin="anonymous"></script>
-    <script src="https://www.inf.ufpr.br/msa18/controller/web/t3.js"></script>
+    <script src="https://www.inf.ufpr.br/msa18/controller/web/t4.js"></script>
 </head>
 
 <body>
@@ -32,8 +32,8 @@
 
     <main>
         <form>
-            <input id="query" placeholder="Insira um GRR">
-            <button id="btnPesquisa">
+            <input id="barraPesquisa" placeholder="Insira um GRR">
+            <button id="btnPesquisa" onclick="carregaAluno()" type="button">
               <svg id="iconLupa" viewBox="0 0 1024 1024">
                 <path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"/>
                 <path d="M0 0h24v24H0z" fill="none"/>
@@ -58,56 +58,56 @@
             </thead>
             <tbody>
                 <tr>
-                    <td id="CI068" onmousedown="clique(event)">CI068 <br> Circuitos Lógicos</td>
-                    <td id="CI210" onmousedown="clique(event)">CI210 <br> Projetos Digitais e Microprocessadores</td>
-                    <td id="CI212" onmousedown="clique(event)">CI212 <br> Organização e Arquitetura de Computadores</td>
-                    <td id="CI215" onmousedown="clique(event)">CI215 <br> Sistemas Operacionais</td>
-                    <td id="CI162" onmousedown="clique(event)">CI162 <br> Engenharia de Requisitos</td>
-                    <td id="CI162" onmousedown="clique(event)">CI163 <br> Projeto de Software</td>
-                    <td id="CI221" onmousedown="clique(event)">CI221 <br> Engenharia de Software</td>
+                    <td id="CI068" onmousedown="carregaMateria(event)">CI068 <br> Circuitos Lógicos</td>
+                    <td id="CI210" onmousedown="carregaMateria(event)">CI210 <br> Projetos Digitais e Microprocessadores</td>
+                    <td id="CI212" onmousedown="carregaMateria(event)">CI212 <br> Organização e Arquitetura de Computadores</td>
+                    <td id="CI215" onmousedown="carregaMateria(event)">CI215 <br> Sistemas Operacionais</td>
+                    <td id="CI162" onmousedown="carregaMateria(event)">CI162 <br> Engenharia de Requisitos</td>
+                    <td id="CI162" onmousedown="carregaMateria(event)">CI163 <br> Projeto de Software</td>
+                    <td id="CI221" onmousedown="carregaMateria(event)">CI221 <br> Engenharia de Software</td>
                     <td id="OPT3">OPT</td>
                 </tr>
 
                 <tr>
-                    <td id="CI055" onmousedown="clique(event)">CI055 <br> Algoritmos e Estruturas de Dados I</td>
-                    <td id="CI056" onmousedown="clique(event)">CI056 <br> Algoritmos e Estruturas de Dados II</td>
-                    <td id="CI057" onmousedown="clique(event)">CI057 <br> Algoritmos e Estruturas de Dados III</td>
-                    <td id="CI062" onmousedown="clique(event)">CI062 <br> Técnicas Alternativas de Programação</td>
-                    <td id="CI065" onmousedown="clique(event)">CI065 <br> Algoritmos e Teoria dos Grafos</td>
-                    <td id="CI165" onmousedown="clique(event)">CI165 <br> Análise de Algoritmos</td>
-                    <td id="CI211" onmousedown="clique(event)">CI211 <br> Construção de Compiladores</td>
+                    <td id="CI055" onmousedown="carregaMateria(event)">CI055 <br> Algoritmos e Estruturas de Dados I</td>
+                    <td id="CI056" onmousedown="carregaMateria(event)">CI056 <br> Algoritmos e Estruturas de Dados II</td>
+                    <td id="CI057" onmousedown="carregaMateria(event)">CI057 <br> Algoritmos e Estruturas de Dados III</td>
+                    <td id="CI062" onmousedown="carregaMateria(event)">CI062 <br> Técnicas Alternativas de Programação</td>
+                    <td id="CI065" onmousedown="carregaMateria(event)">CI065 <br> Algoritmos e Teoria dos Grafos</td>
+                    <td id="CI165" onmousedown="carregaMateria(event)">CI165 <br> Análise de Algoritmos</td>
+                    <td id="CI211" onmousedown="carregaMateria(event)">CI211 <br> Construção de Compiladores</td>
                     <td id="OPT4">OPT</td>
                 </tr>
 
                 <tr>
-                    <td id="CM046" onmousedown="clique(event)">CM046 <br> Introdução à Álgebra</td>
-                    <td id="CI067" onmousedown="clique(event)">CI067 <br> Oficina de Computação </td>
-                    <td id="CI064" onmousedown="clique(event)">CI064 <br> Software Básico </td>
-                    <td id="CE003" onmousedown="clique(event)">CE003 <br> Estatística II</td>
-                    <td id="CI059" onmousedown="clique(event)">CI059 <br> Introdução à Teoria da Computação</td>
-                    <td id="CI209" onmousedown="clique(event)">CI209 <br> Inteligência Artificial</td>
+                    <td id="CM046" onmousedown="carregaMateria(event)">CM046 <br> Introdução à Álgebra</td>
+                    <td id="CI067" onmousedown="carregaMateria(event)">CI067 <br> Oficina de Computação </td>
+                    <td id="CI064" onmousedown="carregaMateria(event)">CI064 <br> Software Básico </td>
+                    <td id="CE003" onmousedown="carregaMateria(event)">CE003 <br> Estatística II</td>
+                    <td id="CI059" onmousedown="carregaMateria(event)">CI059 <br> Introdução à Teoria da Computação</td>
+                    <td id="CI209" onmousedown="carregaMateria(event)">CI209 <br> Inteligência Artificial</td>
                     <td id="OPT1">OPT</td>
                     <td id="OPT5">OPT</td>
                 </tr>
 
                 <tr>
-                    <td id="CM045" onmousedown="clique(event)">CM045 <br> Geometria Analítica</td>
-                    <td id="CM005" onmousedown="clique(event)">CM005 <br> Álgebra Linear </td>
-                    <td id="CI237" onmousedown="clique(event)">CI237 <br> Matemática Discreta </td>
-                    <td id="CI058" onmousedown="clique(event)">CI058 <br> Redes de Computadores I</td>
-                    <td id="CI061" onmousedown="clique(event)">CI061 <br> Redes de Computadores II</td>
-                    <td id="CI218" onmousedown="clique(event)">CI218 <br> Sistemas de Bancos de Dados</td>
+                    <td id="CM045" onmousedown="carregaMateria(event)">CM045 <br> Geometria Analítica</td>
+                    <td id="CM005" onmousedown="carregaMateria(event)">CM005 <br> Álgebra Linear </td>
+                    <td id="CI237" onmousedown="carregaMateria(event)">CI237 <br> Matemática Discreta </td>
+                    <td id="CI058" onmousedown="carregaMateria(event)">CI058 <br> Redes de Computadores I</td>
+                    <td id="CI061" onmousedown="carregaMateria(event)">CI061 <br> Redes de Computadores II</td>
+                    <td id="CI218" onmousedown="carregaMateria(event)">CI218 <br> Sistemas de Bancos de Dados</td>
                     <td id="OPT2">OPT</td>
                     <td id="OPT6">OPT</td>
                 </tr>
 
                 <tr>
-                    <td id="CM201" onmousedown="clique(event)">CM201 <br> Cálculo Diferencial e Integral I</td>
-                    <td id="CM202" onmousedown="clique(event)">CM202 <br> Cálculo Diferencial e Integral II</td>
-                    <td id="CI166" onmousedown="clique(event)">CI166 <br> Metodologia Científica</td>
-                    <td id="CI164" onmousedown="clique(event)">CI164 <br> Introdução à Computação Científica</td>
-                    <td id="SA214" onmousedown="clique(event)">SA214 <br> Introdução à Teoria Geral da Administração</td>
-                    <td id="CI220" onmousedown="clique(event)">CI220 <br> Teoria de Sistemas</td>
+                    <td id="CM201" onmousedown="carregaMateria(event)">CM201 <br> Cálculo Diferencial e Integral I</td>
+                    <td id="CM202" onmousedown="carregaMateria(event)">CM202 <br> Cálculo Diferencial e Integral II</td>
+                    <td id="CI166" onmousedown="carregaMateria(event)">CI166 <br> Metodologia Científica</td>
+                    <td id="CI164" onmousedown="carregaMateria(event)">CI164 <br> Introdução à Computação Científica</td>
+                    <td id="SA214" onmousedown="carregaMateria(event)">SA214 <br> Introdução à Teoria Geral da Administração</td>
+                    <td id="CI220" onmousedown="carregaMateria(event)">CI220 <br> Teoria de Sistemas</td>
                     <td id="TG1">TG I</td>
                     <td id="TG2">TG II</td>
                 </tr>

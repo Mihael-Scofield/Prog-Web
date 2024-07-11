@@ -211,26 +211,20 @@ svg {
     padding: 10px;
 }
 
-
-
-
-
-
-
 .aprovado {
-    background-color: green;
+    background-color: rgb(119,221,119);
 }
 
 .reprovado {
-    background-color: red;
+    background-color: rgb(255,105,97);
 }
 
 .matriculado {
-    background-color: blue;
+    background-color: rgb(132,182,244);
 }
 
 .equivalencia {
-    background-color: yellow;
+    background-color: rgb(253,253,150);
 }
 
 #tblGrade {
@@ -247,22 +241,24 @@ th, td {
 
 #popup {
     position: absolute;
-    top: 15%;
+    top: 65%;
     left: 50%;
-    background-color: grey;
-    padding: 2%;
+    background-color: rgb(206, 230, 243);
+    padding: 3%;
     border-radius: 15px;
+    border: outset;    
     color: black;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-#fechar-popup {
+#fechaPopup {
     position: absolute;
-    left: 95%;
+    left: 90%;
     top: 5px;
-    font-size: 1.5pc;
+    font-size: 2pc;
 }
 
-#fechar-popup:hover {
+#fechaPopup:hover {
     color: red;
     cursor: pointer;
 }
