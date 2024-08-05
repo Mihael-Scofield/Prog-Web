@@ -1,0 +1,4 @@
+<h1><%= @autor.nome %></h1>
+<%= link_to 'Editar', edit_autor_path(@autor) if admin? %>
+<%= link_to 'Voltar', autors_path, class: 'button button-secondary' %>
+

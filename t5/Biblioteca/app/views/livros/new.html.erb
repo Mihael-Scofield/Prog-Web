@@ -1,0 +1,36 @@
+<h1><%= action_name.capitalize %> Livro</h1>
+
+<%= form_with model: @livro, local: true do |form| %>
+  <% if @livro.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@livro.errors.count, "error") %> proibiu esse livro de ser salvo:</h2>
+      <ul>
+        <% @livro.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :titulo %>
+    <%= form.text_field :titulo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :autor_id %>
+    <%= form.collection_select :autor_id, Autor.all, :id, :nome %>
+  </div>
+
+  <div class="field">
+    <%= form.label :genero_id %>
+    <%= form.collection_select :genero_id, Genero.all, :id, :nome %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
+
+<%= link_to 'Voltar', livros_path, class: 'button button-secondary' %>
+

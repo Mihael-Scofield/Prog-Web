@@ -1,0 +1,26 @@
+<h1><%= action_name.capitalize %> Gênero</h1>
+
+<%= form_with model: @genero, local: true do |form| %>
+  <% if @genero.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@genero.errors.count, "error") %> proibiu esse gênero de ser salvo:</h2>
+      <ul>
+        <% @genero.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :nome %>
+    <%= form.text_field :nome %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
+
+<%= link_to 'Voltar', generos_path, class: 'button button-secondary' %>
+

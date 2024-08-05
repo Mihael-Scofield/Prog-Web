@@ -1,0 +1,27 @@
+<h1>Livros</h1>
+<%= link_to 'Novo Livro', new_livro_path, class: 'button button-primary' if admin? %>
+
+<table>
+  <thead>
+    <tr>
+      <th>Título</th>
+      <th>Autor</th>
+      <th>Gênero</th>
+      <th class="actions">Ações</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @livros.each do |livro| %>
+      <tr>
+        <td><%= link_to livro.titulo, livro %></td>
+        <td><%= livro.autor.nome %></td>
+        <td><%= livro.genero.nome %></td>
+        <td class="actions">
+          <%= link_to 'Editar', edit_livro_path(livro), class: 'button button-secondary' if admin? %>
+          <%= link_to 'Excluir', livro, method: :delete, data: { confirm: 'Tem certeza?' }, class: 'button button-primary' if admin? %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+

@@ -1,0 +1,26 @@
+<h1><%= action_name.capitalize %> Autor</h1>
+
+<%= form_with model: @autor, local: true do |form| %>
+  <% if @autor.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@autor.errors.count, "error") %> proibiu esse autor de ser salvo:</h2>
+      <ul>
+        <% @autor.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :nome %>
+    <%= form.text_field :nome %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
+
+<%= link_to 'Voltar', autors_path, class: 'button button-secondary' %>
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Biblioteca</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <%= stylesheet_link_tag 'application', media: 'all' %>
+  <%= javascript_importmap_tags %>
+  <%= javascript_include_tag 'application', defer: true %>
+</head>
+
+<body>
+  <nav>
+    <% if logged_in? %>
+      <%= link_to 'Home', root_path %> |
+      <%= link_to 'Logout', logout_path, method: :delete, data: { confirm: 'Tem certeza que deseja sair?' } %> 
+    <% else %>
+      <%= link_to 'Login', login_path %> |
+      <%= link_to 'Signup', signup_path %>
+    <% end %>
+  </nav>
+
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+
+  <%= yield %>
+</body>
+</html>
+

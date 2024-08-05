@@ -1,0 +1,4 @@
+<h1><%= @genero.nome %></h1>
+<%= link_to 'Editar', edit_genero_path(@genero) if admin? %>
+<%= link_to 'Voltar', generos_path, class: 'button button-secondary' %>
+
