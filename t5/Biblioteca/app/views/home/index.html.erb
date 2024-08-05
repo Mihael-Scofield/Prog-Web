@@ -1,0 +1,9 @@
+<h1>Bem-vindo à Biblioteca</h1>
+
+<% if logged_in? %>
+  <p>Olá, <%= current_user.username %>!</p>
+  <p>Explore os <%= link_to 'Autors', autors_path %>, <%= link_to 'Livros', livros_path %> e <%= link_to 'Gêneros', generos_path %>.</p>
+<% else %>
+  <p>Por favor, efetue o login ou se cadastre em "signup" para iniciar</p>
+<% end %>
+

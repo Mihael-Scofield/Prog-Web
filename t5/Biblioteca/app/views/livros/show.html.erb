@@ -1,0 +1,6 @@
+<h1><%= @livro.titulo %></h1>
+<p>Autor: <%= @livro.autor.nome %></p>
+<p>Gênero: <%= @livro.genero.nome %></p>
+<%= link_to 'Editar', edit_livro_path(@livro) if admin? %>
+<%= link_to 'Voltar', livros_path, class: 'button button-secondary' %>
+

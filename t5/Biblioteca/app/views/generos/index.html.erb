@@ -1,0 +1,23 @@
+<h1>Gêneros</h1>
+<%= link_to 'Novo Gênero', new_genero_path, class: 'button button-primary' if admin? %>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th class="actions">Ações</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @generos.each do |genero| %>
+      <tr>
+        <td><%= link_to genero.nome, genero %></td>
+        <td class="actions">
+          <%= link_to 'Editar', edit_genero_path(genero), class: 'button button-secondary' if admin? %>
+          <%= link_to 'Excluir', genero, method: :delete, data: { confirm: 'Tem certeza?' }, class: 'button button-primary' if admin? %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
